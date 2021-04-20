@@ -1,0 +1,16 @@
+class Solution {
+public:
+    char findTheDifference(string s, string t) {
+        char ans=0;
+        for(auto x:s)
+        {
+            ans=ans^x;
+        }
+        for(auto i:t)
+        {
+            ans=ans^i;
+        }
+        char res=char(ans);
+        return res;
+    }
+};
